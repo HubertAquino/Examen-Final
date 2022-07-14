@@ -1,0 +1,227 @@
+/* General */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header - Logo */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.header h1 {
+  font-weight: 800;
+  margin: 0;
+}
+
+.header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.header h1 span {
+  color: black;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Header - Menú */
+.menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.menu .registrarte {
+  margin-left: 70px;
+}
+
+.menu a {
+  color: black;
+  text-decoration: none;
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+.menu li:hover {
+  transform: scale(1.05);
+}
+
+/* Section */
+.section {
+  padding: 10px 0;
+}
+
+.section .caja-padre {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgb(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+
+.section .caja-hijo-1, .section .caja-hijo-2 {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.section .caja-hijo-1 {
+  width: 35%;
+}
+
+.section .caja-hijo-2 {
+  width: 65%;
+}
+
+.section .caja-hijo-1 h2 {
+  color: #ffa31a;
+  font-size: 60px;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section .caja-hijo-1 p {
+  font-size: 13px;
+  text-align: justify;
+  border-top: 3px solid #ffa31a;
+  padding-top: 15px;
+  margin-bottom: 50px;
+}
+
+.section .caja-hijo-1 a {
+  color: black;
+  background-color: #ffa31a;
+  text-decoration: none;
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.section .caja-hijo-1 a:hover {
+  transform: scale(1.05);
+}
+
+.section .caja-hijo-2 img {
+  width: 100%;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  border: 1px solid black;
+}
+
+.sub_menu {
+  background-color: #ffa31a;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.sub_menu i {
+  color: black;
+}
+
+.caja_menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 80%;
+  background-color: white;
+  height: 100vh;
+  z-index: 10;
+  padding: 20px;
+}
+
+.caja_menu i {
+  color: black;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.caja_menu a {
+  color: black;
+}
+
+.desaparecer {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .sub_menu {
+    display: block;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+  
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .header .menu {
+    display: none;
+  }
+
+  .header .menu a {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .header .menu .registrarte {
+    margin-left: 10px;
+  }
+
+  .section .caja-padre {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .section .caja-hijo-1, .section .caja-hijo-2 {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+  }
+
+  .section .caja-hijo-1 {
+    margin-bottom: 20px;
+  }
+
+  .section .caja-hijo-1 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .section .caja-hijo-1 p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .section .caja-hijo-1 a {
+    font-size: 13px;
+  }
+}
