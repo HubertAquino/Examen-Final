@@ -169,6 +169,35 @@ body {
   display: none;
 }
 
+.menu_responsivo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menu_responsivo ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.menu_responsivo li {
+  text-decoration: none;
+  margin-bottom: 20px;
+
+}
+
+.menu_responsivo a {
+  text-decoration: none;
+}
+
+.menu_responsivo li::marker {
+  display: none;
+}
+
 @media (max-width: 800px) {
   .sub_menu {
     display: block;
